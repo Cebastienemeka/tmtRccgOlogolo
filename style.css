@@ -135,17 +135,14 @@
         }
         header h2,
         img {
-            width: 30%;
+            width: 35%;
         }
     }
     
     @media(max-width:550px) {
-        header {
-            height: 10px;
-        }
         header h2,
         img {
-            width: 30%;
+            width: 35%;
         }
     }
     
