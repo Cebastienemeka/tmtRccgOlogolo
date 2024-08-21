@@ -132,14 +132,14 @@
         }
         header h2,
         img {
-            width: 35%;
+            width: 38%;
         }
     }
     
     @media(max-width:550px) {
         header h2,
         img {
-            width: 35%;
+            width: 40%;
         }
     }
     
@@ -198,7 +198,7 @@
     .banner-area {
         position: relative;
         justify-content: center;
-        height: 100vh;
+        height: 108vh;
         color: #fff;
         text-align: center;
     }
