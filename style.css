@@ -29,6 +29,7 @@
         top: 0;
         left: 0;
         width: 100%;
+        height: 17vh;
         background-color: #000;
         /* Change to desired background color */
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -36,6 +37,10 @@
         z-index: 1000;
         /* Adjust z-index as needed */
     }
+    /* .logo {
+        width: 30%;
+        margin-top: -1%;
+    } */
     
     header {
         display: flex;
@@ -85,8 +90,9 @@
         }
     }
     
-    @media(max-width:700px) {
+    @media (max-width: 700px) {
         header {
+            height: 100px;
             flex-direction: row;
         }
         header ul.nav li {
@@ -94,9 +100,7 @@
         }
         header ul.nav {
             height: 0;
-            /* Initially hide the navigation menu */
             overflow: hidden;
-            /* Hide the overflow */
             position: fixed;
             top: 0;
             right: 0;
@@ -111,11 +115,8 @@
         }
         header ul.nav.active {
             height: 100vh;
+            display: flex;
         }
-        /* header .open,
-        header .close {
-            display: none;
-        } */
         header .open {
             display: block;
             font-size: 30px;
@@ -128,13 +129,46 @@
             cursor: pointer;
             transition: opacity 0.6s ease-in-out;
         }
-        header ul.nav.active {
-            display: flex;
-        }
         header ul.nav.active .close {
             opacity: 1;
-            /* display: block; */
-            /* Show the close icon when the navigation is active */
+            display: block;
+        }
+        header h2,
+        img {
+            width: 40%;
+        }
+    }
+    
+    @media(max-width:550px) {
+        header {
+            height: 10px;
+        }
+        header h2,
+        img {
+            width: 50%;
+        }
+    }
+    
+    @media (min-width: 701px) {
+        header .open {
+            display: none !important;
+            /* Use !important to enforce the rule */
+        }
+        header .close {
+            display: none !important;
+            /* Use !important to enforce the rule */
+        }
+        header ul.nav {
+            display: flex !important;
+            position: static !important;
+            height: auto !important;
+            flex-direction: row !important;
+            background: none !important;
+            transition: none !important;
+        }
+        header ul.nav.active {
+            height: auto !important;
+            display: flex !important;
         }
     }
     /* banner area */
@@ -176,7 +210,8 @@
     }
     
     .banner-area .banner-img {
-        background-image: url(./cross.jpg);
+        /* background-image: url(./cross.jpg); */
+        background-image: url(./grouptmt.jpg);
         position: absolute;
         top: 0;
         left: 0;
@@ -239,7 +274,6 @@
     
     #banner-button {
         padding: 15px 35px;
-        background: #bf0a30;
         background: rgb(1, 1, 31);
         text-transform: uppercase;
     }
@@ -259,6 +293,70 @@
             background-color: #bf0a30;
             width: 50%;
             height: 10vh;
+            border-radius: 5px;
+        }
+    }
+    
+    @media(max-width:635px) {
+        .banner-area a.banner-btn {
+            width: 70%;
+            height: 10vh;
+            border-radius: 5px;
+        }
+    }
+    
+    @media(max-width:640px) {
+        .banner-area a.banner-btn {
+            width: 70%;
+            height: 10vh;
+            border-radius: 5px;
+        }
+    }
+    /* @media(max-width:460px) {
+        .banner-area a.banner-btn {
+            width: 70%;
+            height: 10vh;
+            border-radius: 5px;
+        }
+    } */
+    
+    @media(max-width:450px) {
+        .banner-area a.banner-btn {
+            width: 80%;
+            height: 10vh;
+            border-radius: 5px;
+        }
+    }
+    
+    @media(max-width:400px) {
+        .banner-area a.banner-btn {
+            width: 90%;
+            height: 10vh;
+            border-radius: 5px;
+        }
+    }
+    
+    @media(max-width:362px) {
+        .banner-area a.banner-btn {
+            width: 100%;
+            height: 10vh;
+            border-radius: 5px;
+        }
+    }
+    
+    @media(max-width:332px) {
+        .banner-area a.banner-btn {
+            width: 110%;
+            height: 10vh;
+            border-radius: 5px;
+        }
+    }
+    
+    @media(max-width:307px) {
+        .banner-area a.banner-btn {
+            width: 120%;
+            height: 10vh;
+            border-radius: 5px;
         }
     }
     /* About area */
@@ -281,6 +379,7 @@
     .about-left {
         flex-basis: 30%;
         background-image: url(./combined-prayer.jpg);
+        /* background-image: url(./pastor.jpg); */
     }
     
     .about-right {
@@ -333,7 +432,83 @@
     
     @media(max-width:700px) {
         .about-right p {
-            display: none;
+            /* display: none; */
+        }
+    }
+    /* Pastor Message About area 1*/
+    
+    ul.about-content1 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .about-content1 li {
+        padding: 20px;
+        height: 500px;
+        background-clip: content-box;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .about-left1 {
+        flex-basis: 30%;
+        background-image: url(./pastor.jpg);
+        /* background-image: url(./pastor.jpg); */
+    }
+    
+    .about-right1 {
+        flex-basis: 70%;
+    }
+    
+    .about-right1 h2 {
+        font-size: 35px;
+        margin-bottom: 3%;
+    }
+    
+    .about-area1 p {
+        max-width: 800px;
+        margin-bottom: 35px;
+        line-height: 1.5;
+        text-align: left;
+        padding-left: 0;
+    }
+    /* .section-title {
+        text-transform: uppercase;
+        font-size: 50px;
+        margin-bottom: 5%;
+    } */
+    /* .section-title span {
+        color: #bf0a30;
+    } */
+    /* .about-btn {
+        padding: 15px 35px;
+        background: #bf0a30;
+        border-radius: 50px;
+        text-transform: upppercase;
+        color: #fff;
+    } */
+    
+    @media(max-width: 1000px) {
+        .section-title {
+            font-size: 35px;
+        }
+        .about-left,
+        .about-right {
+            flex-basis: 100%;
+        }
+        .about-content li {
+            padding: 8px;
+        }
+    }
+    
+    @media(max-width:700px) {
+        .about-right p {
+            /* display: none; */
+        }
+        .about-left1 {
+            flex-basis: 100%;
         }
     }
     /* Message Area */
@@ -345,6 +520,69 @@
         background-attachment: fixed;
         color: #fff;
         text-align: center;
+    }
+    
+    @media(max-width:510px) {
+        .msg-area {
+            margin-top: 15%;
+        }
+    }
+    
+    @media(max-width:460px) {
+        .msg-area {
+            margin-top: 30%;
+        }
+    }
+    
+    @media(max-width:400px) {
+        .msg-area {
+            margin-top: 50%;
+        }
+    }
+    
+    @media(max-width:353px) {
+        .msg-area {
+            margin-top: 70%;
+        }
+    }
+    /* Message Area 1*/
+    
+    .msg-area1 {
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url(./children.jpg);
+        background-size: cover;
+        background-position: center center;
+        /* background-attachment: fixed; */
+        color: #fff;
+        text-align: center;
+    }
+    
+    .msg-content1 {
+        text-align: center;
+    }
+    
+    @media(max-width: 510px) {
+        .msg-area1 {
+            margin-top: 15%;
+        }
+    }
+    
+    @media(max-width:460px) {
+        .msg-area1 {
+            margin-top: 30%;
+        }
+    }
+    
+    @media(max-width:400px) {
+        .msg-area1 {
+            margin-top: 50%;
+        }
+    }
+    
+    @media(max-width:353px) {
+        .msg-area1 {
+            margin-top: 70%;
+        }
     }
     /* Service Area */
     
@@ -448,4 +686,11 @@
         background-color: #000;
         padding: 60px 0;
         width: 115.4%;
+    }
+    
+    @media(max-width:640px) {
+        .footer {
+            height: 5vh;
+            /* width: 115.4%; */
+        }
     }

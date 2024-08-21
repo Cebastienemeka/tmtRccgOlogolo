@@ -6,24 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THE MOUNTAIN TOP (RCCG)</title>
     <!-- <link rel="stylesheet" href="http://maxcd.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Rccg_logo.png" type="image/x-icon">
 </head>
+
+<style>
+    .carousel-inner img {
+        width: 20%;
+        /* Make the image take up the full width of the container */
+        height: 400px;
+        /* Set a fixed height for the images */
+        object-fit: cover;
+        /* Ensures the image covers the area without distortion */
+    }
+    /* .custom-img {
+        width: 20%;
+        height: auto;
+    } */
+    
+    .carousel-item {
+        position: relative;
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Black with 50% opacity */
+        z-index: 1;
+    }
+    /* .carousel-caption {
+        z-index: 10;
+        position: relative;
+        color: white;
+    } */
+</style>
 
 <body>
     <header>
         <h2>
-            <a href=""><img src="./Rccg_logo.png" alt="logo" width="100"></a>
+            <a href=""><img src="./Rccg_logo.png" width="70" alt="logo"></a>
         </h2>
 
         <ul class="nav">
-            <li><a href="#">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <div class="close"><i class="fa fa-close"></i></div>
         </ul>
 
@@ -46,19 +87,22 @@
     </header> -->
 
 
-    <section class="banner-area" data-aos="fade-up">
+    <section class="banner-area" id="home">
         <div class="banner-img"></div>
         <!-- <h3>We Help to get things Done</h3> -->
-        <h3>Welcome To <span class="the">THE</span> <span class="mountain">MOUNTAIN</span> <span class="top">TOP</span></h3>
-        <h1>God is <span class="almighty">Almighty</span></h1>
-        <a href=" https://bit.ly/3GugGu7" target="_blank" class="banner-btn" id="banner-button">Register as a First Timer</a>
+        <h3 data-aos="fade-up">Welcome To <span class="the" data-aos="fade-up">THE</span> <span class="mountain">MOUNTAIN</span> <span class="top">TOP</span></h3>
+        <h1 data-aos="fade-left">God is <span class=" almighty ">Almighty</span></h1>
+        <a href=" https://bit.ly/3GugGu7 " style="padding: 15px 35px;
+        background: rgb(1, 1, 31);
+        border-radius: 5px;
+        text-transform: uppercase;" target="_blank " data-aos="fade-right" class="banner-btn " id="banner-button ">Register as a First Timer</a>
     </section>
 
-    <section class="about-area" id="about">
+    <section class="about-area " id="about">
         <h3 class="section-title">About <span>Us</span></h3>
-        <ul class="about-content">
+        <ul class="about-content" data-aos="fade-left">
             <li class="about-left"></li>
-            <li class="about-right">
+            <li class="about-right" data-aos="fade-right">
                 <!-- <h2>We are taking Small Steps to make Earth Better Planet of the Universe</h2> -->
                 <h2>The Mountain Top (RCCG): CORE VALUES</h2>
                 <p>
@@ -66,19 +110,19 @@
                     At Mountain Top we thrives on outreach, extending a helping hand to the community. Through discipleship, we nurture spiritual growth. Children fellowship ensures a vibrant, inclusive space for our youngest members.
                 </p>
                 <p><i class='fa fa-long-arrow-right'></i> &nbsp; To make heaven.</p>
-                <p><i class="fa fa-long-arrow-right"></i> &nbsp; To take as many people with us.</p>
-                <p><i class="fa fa-long-arrow-right"></i> &nbsp; To have a member of RCCG in every family of all nations.</p>
-                <p><i class="fa fa-long-arrow-right"></i> &nbsp; To accomplish No. 1 above, holiness will be our lifestyle.</p>
-                <p><i class="fa fa-long-arrow-right"></i> &nbsp; We will pursue these objectives until every Nation in the world is reached for the Lord Jesus Christ.</p>
+                <p><i class="fa fa-long-arrow-right "></i> &nbsp; To take as many people with us.</p>
+                <p><i class="fa fa-long-arrow-right "></i> &nbsp; To have a member of RCCG in every family of all nations.</p>
+                <p><i class="fa fa-long-arrow-right "></i> &nbsp; To accomplish No. 1 above, holiness will be our lifestyle.</p>
+                <p><i class="fa fa-long-arrow-right "></i> &nbsp; We will pursue these objectives until every Nation in the world is reached for the Lord Jesus Christ.</p>
 
 
             </li>
         </ul>
     </section>
 
-    <section class="msg-area">
-        <div class="msg-content">
-            <h2>Quote of the day</h2>
+    <section class="msg-area1 " data-aos="zoom-in">
+        <div class="msg-content1 ">
+            <h2>Prayer of the day</h2>
             <p>
                 United in the Holy Trinity, we discover God's love through Jesus, guided by the Holy Spirit's eternal flame.
             </p>
@@ -86,22 +130,24 @@
 
     </section>
 
-    <section class="services-area" id="services">
-        <h3 class="section-title">Our <span>Services</span></h3>
-        <ul class="services-content">
-            <li>
-                <img src="./sunday_service.jpg" alt="invalid image">
+
+
+    <section class="services-area " id="services">
+        <h3 class="section-title ">Our <span>Services</span></h3>
+        <ul class="services-content ">
+            <li data-aos="zoom-in-down">
+                <img src="./sunday_service.jpg " alt="invalid image ">
                 <h4>Sunday Service</h4>
                 <p><b>Sunday School: </b>8am - 9am <b>Sunday Service : </b>9am - 11:30am <br> In Sunday School, we learn together, exploring faith. <br> The service unites for collective worship and praise.
                 </p>
             </li>
-            <li>
-                <img src="./digging_deep.jpg" alt="invalid image">
+            <li data-aos="zoom-in-down">
+                <img src="./digging_deep.jpg " alt="invalid image ">
                 <h4>Tuesday Service</h4>
-                <p><b>Digging Deep :</b> 6pm - 8pm</p> In our "Digging Deep" sessions, <br> we actively engage with the Bible, <br> seeking clarity by asking questions <br> for a deeper comprehension.
+                <p><b>Digging Deep :</b> 6pm - 8pm</p> In our "Digging Deep " sessions, <br> we actively engage with the Bible, <br> seeking clarity by asking questions <br> for a deeper comprehension.
             </li>
-            <li>
-                <img src="./faith_clinic.jpg" alt="invalid image">
+            <li data-aos="zoom-in-down">
+                <img src="./faith_clinic.jpg " alt="invalid image ">
                 <h4>Friday Service</h4>
                 <p><b>Morning Prayer :</b> 6am - 7am</p>
                 <p><b>Children Fellowship :</b> 5pm- 6pm</p>
@@ -110,52 +156,201 @@
         </ul>
     </section>
 
-    <section class="contact-area" id="contact">
-        <h3 class="section-title">Our <span>Contact</span></h3>
+    <section class="about-area1 " id="about1">
+        <!-- <h3 class="section-title">About <span>Us</span></h3> -->
+        <ul class="about-content1" data-aos="fade-left">
+            <li class="about-right1" data-aos="fade-right">
+                <!-- <h2>We are taking Small Steps to make Earth Better Planet of the Universe</h2> -->
+                <h2>PASTOR'S WELCOME MESSAGE</h2>
+                <p>
 
-        <ul class="contact-content">
-            <li>
-                <i class="fa fa-map-marker"></i>
+                    At Mountain Top we thrives on outreach, extending a helping hand to the community. Through discipleship, we nurture spiritual growth. Children fellowship ensures a vibrant, inclusive space for our youngest members.
+
+                </p>
+                <!-- <p><i class='fa fa-long-arrow-right'></i> &nbsp; To make heaven.</p>
+                <p><i class="fa fa-long-arrow-right "></i> &nbsp; To take as many people with us.</p>
+                <p><i class="fa fa-long-arrow-right "></i> &nbsp; To have a member of RCCG in every family of all nations.</p>
+                <p><i class="fa fa-long-arrow-right "></i> &nbsp; To accomplish No. 1 above, holiness will be our lifestyle.</p>
+                <p><i class="fa fa-long-arrow-right "></i> &nbsp; We will pursue these objectives until every Nation in the world is reached for the Lord Jesus Christ.</p> -->
+
+
+            </li>
+
+        </ul>
+
+    </section>
+
+    <h3 class="section-title" style="width: 100%; display: flex; justify-content: center;">Our <span>&nbsp;Gallery</span></h3>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" id="gallery">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./1.jpg" class="d-block w-100" data-bs-toggle="modal" data-bs-target="#imageModal" alt="img">
+                <div class="overlay"></div>
+                <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div> -->
+            </div>
+            <div class="carousel-item">
+                <img src="./children.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" class="d-block w-100" alt="img">
+                <div class="overlay"></div>
+                <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div> -->
+            </div>
+            <div class="carousel-item">
+                <img src="./tmtl.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" class="d-block w-100" alt="invalid">
+                <div class="overlay"></div>
+                <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div> -->
+            </div>
+            <div class="carousel-item">
+                <img src="./2.jpg" class="d-block w-100" alt="invalid">
+                <div class="overlay"></div>
+                <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div> -->
+            </div>
+            <div class="carousel-item">
+                <img src="./3.jpg" class="d-block w-100" alt="invalid">
+                <div class="overlay"></div>
+                <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div> -->
+            </div>
+            <div class="carousel-item">
+                <img src="./4.jpg" class="d-block w-100" alt="invalid">
+                <div class="overlay"></div>
+                <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div> -->
+            </div>
+            <div class="carousel-item">
+                <img src="./5.jpg" class="d-block w-100" alt="invalid">
+                <div class="overlay"></div>
+                <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div> -->
+            </div>
+            <div class="carousel-item">
+                <img src="./6.jpg" class="d-block w-100" alt="invalid">
+                <div class="overlay"></div>
+                <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div> -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section class="contact-area " id="contact">
+        <h3 class="section-title ">Our <span>Contact</span></h3>
+
+        <ul class="contact-content ">
+            <li data-aos="zoom-in-up">
+                <i class="fa fa-map-marker "></i>
                 <p>
                     No 24, Chief Kola Ologolo Street, <br> Off Baruwa Baale Palace, By Ruby Apartment
                 </p>
             </li>
-            <li>
-                <i class="fa fa-phone"></i>
+            <li data-aos="zoom-in-down">
+
+                <i class="fa fa-phone "></i>
                 <p>
                     +234 806 736 0252 <br> +234 703 601 3485
                 </p>
             </li>
-            <li>
-                <i class="fa fa-envelope"></i>
+            <li data-aos="zoom-in-up">
+
+                <i class="fa fa-envelope "></i>
                 <p>
-                    info@tmtrccg.com <br> tmtrccg@website.com
+                    <a href="mailto:info@tmtrccg.com ">info@tmtrccg.com</a><br>
+                    <a href=" https://rccgtmtologolo.netlify.app ">rccgtmtologolo</a>
                 </p>
             </li>
         </ul>
-        <br>
-        <br>
-        <br>
-        <br>
 
+        <br>
+        <br>
+        <br>
+        <br>
         <footer class="footer">
-            <p>All Rights Reserved by TMT(RCCG)</p>
+            <!-- <p>All Rights Reserved by TMT(RCCG)</p> -->
+            <p>Copyrights &copy; <span id="currentYear"></span> &nbsp; All Rights Reserved TMT(RCCG)</p>
         </footer>
     </section>
 
 
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
 
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL " crossorigin="anonymous "></script> -->
+
+    <script src="script.js "></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js "></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
     <script>
         AOS.init({
-            duration: 3000,
+            duration: 1000,
             once: true,
         });
     </script>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
+
+</html>
+<script src="script.js "></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js "></script> -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+<script>
+    AOS.init({
+        duration: 2000,
+        once: true,
+    });
+</script>
+
+<script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
 </body>
 
 </html>
